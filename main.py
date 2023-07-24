@@ -180,7 +180,7 @@ def decode_header(bits):
     payload_length = int(payload_length_binstr, 2)
     print("decode_header: payload_length: %d" % payload_length)
 
-    # ...
+
     return fname, bits[16 + fname_length + 64:16 + fname_length + 64 + payload_length]
 
 # provided two lists of bits, ensures both are identical,
